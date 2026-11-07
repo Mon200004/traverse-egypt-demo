@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+  
+  body {
+    background-color: #fbf9f5;
+    color: #1e293b;
+  }
+
+  /* Custom luxury scrollbar for light theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+    border: 1px solid #94a3b8;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+  }
+}
+
+/* Light Theme Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(2, 132, 199, 0.16);
+  box-shadow: 0 10px 30px rgba(5, 35, 62, 0.06);
+}
+
+.glass-panel-gold {
+  background: rgba(255, 253, 247, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 12px 36px rgba(217, 119, 6, 0.08);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(2, 132, 199, 0.14);
+  box-shadow: 0 4px 20px rgba(5, 35, 62, 0.05);
+}
+
+/* Rich Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Deep Navy to Azure text */
+.text-navy-gradient {
+  background: linear-gradient(135deg, #05233e 0%, #0369a1 60%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle border glows */
+.gold-glow {
+  box-shadow: 0 4px 25px rgba(245, 158, 11, 0.22);
+}
+
+.blue-glow {
+  box-shadow: 0 4px 30px rgba(2, 132, 199, 0.18);
+}
+
+/* Hieroglyph & sand pattern overlay for light mode */
+.pharaoh-pattern {
+  background-image: radial-gradient(rgba(217, 119, 6, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
